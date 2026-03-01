@@ -22,6 +22,10 @@ PACKAGES="$PACKAGES luci-i18n-passwall-zh-cn"
 PACKAGES="$PACKAGES luci-app-openclash"
 PACKAGES="$PACKAGES luci-i18n-homeproxy-zh-cn"
 PACKAGES="$PACKAGES openssh-sftp-server"
+PACKAGES="$PACKAGES wireguard-tools"          # WireGuard 核心工具
+PACKAGES="$PACKAGES luci-proto-wireguard"     # WireGuard 协议支持
+PACKAGES="$PACKAGES luci-app-wireguard"       # WireGuard LuCI 管理界面
+PACKAGES="$PACKAGES luci-i18n-wireguard-zh-cn" 
 
 # 判断是否需要编译 Docker 插件
 if [ "$INCLUDE_DOCKER" = "yes" ]; then
